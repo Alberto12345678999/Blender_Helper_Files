@@ -1,0 +1,48 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "compileCommands": "${workspaceFolder}/out/build/x64-release-clangd/compile_commands.json",
+            "defines": [
+                "CCL_NAMESPACE_BEGIN=",
+                "CCL_NAMESPACE_END=",
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "windowsSdkVersion": "10.0.26100.0",
+            "compilerPath": "cl.exe",
+            "cStandard": "c17",
+            "cppStandard": "c++20",
+            "intelliSenseMode": "windows-msvc-x64"
+        },
+        {
+            "name": "Blender-RNA",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "compileCommands": "${workspaceFolder}/out/build/x64-release-clangd/compile_commands.json",
+            "forcedInclude": [
+                "${workspaceFolder}/.vscode/cpp_rna_runtime.h"
+            ],
+            "defines": [
+                "CCL_NAMESPACE_BEGIN=",
+                "CCL_NAMESPACE_END=",
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE",
+                "RNA_RUNTIME",
+                "WITH_OPENVDB"
+            ],
+            "windowsSdkVersion": "10.0.26100.0",
+            "compilerPath": "cl.exe",
+            "cStandard": "c17",
+            "cppStandard": "c++20",
+            "intelliSenseMode": "windows-msvc-x64"
+        }
+    ],
+    "version": 4
+}

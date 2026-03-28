@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Blender (MSVC + Natvis)",
+            "type": "cppvsdbg", // MSVC debugger
+            "request": "launch",
+            "program": "${workspaceFolder}/out/install/x64-release/blender.exe",
+            "args": [
+                "--debug",
+                "--factory-startup"
+            ],
+            "cwd": "${workspaceFolder}",
+            "visualizerFile": "${workspaceFolder}/tools/utils_ide/natvis/Blender.natvis",
+            "externalConsole": false,
+            "stopAtEntry": false
+        }
+    ]
+}

@@ -1,0 +1,271 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build msgfmt",
+            "type": "shell",
+            "command": "powershell.exe",
+            "args": [
+                "-NoProfile",
+                "-ExecutionPolicy",
+                "Bypass",
+                "-File",
+                "tools/windows/build-blender.ps1",
+                "-Preset",
+                "x64-debug",
+                "-Clean",
+                "-Build",
+                "-Target",
+                "msgfmt",
+                "-Jobs",
+                "4"
+            ],
+            "problemMatcher": [
+                "$msCompile"
+            ],
+            "group": "build"
+        },
+        {
+            "label": "build msgfmt",
+            "type": "shell",
+            "command": "powershell.exe",
+            "args": [
+                "-NoProfile",
+                "-ExecutionPolicy",
+                "Bypass",
+                "-File",
+                "tools/windows/build-blender.ps1",
+                "-Preset",
+                "x64-debug",
+                "-Clean",
+                "-Build",
+                "-Target",
+                "msgfmt",
+                "-Jobs",
+                "4"
+            ],
+            "problemMatcher": [
+                "$msCompile"
+            ],
+            "group": "build"
+        },
+        {
+            "label": "build msgfmt (no clean)",
+            "type": "shell",
+            "command": "powershell.exe",
+            "args": [
+                "-NoProfile",
+                "-ExecutionPolicy",
+                "Bypass",
+                "-File",
+                "tools/windows/build-blender.ps1",
+                "-Preset",
+                "x64-debug",
+                "-Build",
+                "-Target",
+                "msgfmt",
+                "-Jobs",
+                "4"
+            ],
+            "problemMatcher": [
+                "$msCompile"
+            ],
+            "group": "build"
+        },
+        {
+            "label": "configure x64-release",
+            "type": "shell",
+            "command": "powershell.exe",
+            "args": [
+                "-NoProfile",
+                "-ExecutionPolicy",
+                "Bypass",
+                "-File",
+                "tools/windows/build-blender.ps1",
+                "-Preset",
+                "x64-release"
+            ],
+            "group": "build"
+        },
+        {
+            "label": "configure x64-release-clangd",
+            "type": "shell",
+            "command": "powershell.exe",
+            "args": [
+                "-NoProfile",
+                "-ExecutionPolicy",
+                "Bypass",
+                "-File",
+                "tools/windows/build-blender.ps1",
+                "-Preset",
+                "x64-release-clangd"
+            ],
+            "group": "build"
+        },
+        {
+            "label": "build glsl_preprocess (release)",
+            "type": "shell",
+            "command": "powershell.exe",
+            "args": [
+                "-NoProfile",
+                "-ExecutionPolicy",
+                "Bypass",
+                "-File",
+                "tools/windows/build-blender.ps1",
+                "-Preset",
+                "x64-release",
+                "-Build",
+                "-Target",
+                "glsl_preprocess",
+                "-Jobs",
+                "8"
+            ],
+            "group": "build"
+        },
+        {
+            "label": "configure x64-release",
+            "type": "shell",
+            "command": "powershell.exe",
+            "args": [
+                "-NoProfile",
+                "-ExecutionPolicy",
+                "Bypass",
+                "-File",
+                "tools/windows/build-blender.ps1",
+                "-Preset",
+                "x64-release"
+            ],
+            "group": "build"
+        },
+        {
+            "label": "build glsl_preprocess (release)",
+            "type": "shell",
+            "command": "powershell.exe",
+            "args": [
+                "-NoProfile",
+                "-ExecutionPolicy",
+                "Bypass",
+                "-File",
+                "tools/windows/build-blender.ps1",
+                "-Preset",
+                "x64-release",
+                "-Build",
+                "-Target",
+                "glsl_preprocess",
+                "-Jobs",
+                "8"
+            ],
+            "group": "build"
+        },
+        {
+            "label": "configure x64-release",
+            "type": "shell",
+            "command": "powershell.exe",
+            "args": [
+                "-NoProfile",
+                "-ExecutionPolicy",
+                "Bypass",
+                "-File",
+                "tools/windows/build-blender.ps1",
+                "-Preset",
+                "x64-release"
+            ],
+            "group": "build"
+        },
+        {
+            "label": "build glsl_preprocess (release)",
+            "type": "shell",
+            "command": "powershell.exe",
+            "args": [
+                "-NoProfile",
+                "-ExecutionPolicy",
+                "Bypass",
+                "-File",
+                "tools/windows/build-blender.ps1",
+                "-Preset",
+                "x64-release",
+                "-Build",
+                "-Target",
+                "glsl_preprocess",
+                "-Jobs",
+                "8"
+            ],
+            "group": "build"
+        },
+        {
+            "label": "build glsl_preprocess (release)",
+            "type": "shell",
+            "command": "powershell.exe",
+            "args": [
+                "-NoProfile",
+                "-ExecutionPolicy",
+                "Bypass",
+                "-File",
+                "tools/windows/build-blender.ps1",
+                "-Preset",
+                "x64-release",
+                "-Build",
+                "-Target",
+                "glsl_preprocess",
+                "-Jobs",
+                "8"
+            ],
+            "group": "build"
+        },
+        {
+            "label": "configure x64-release",
+            "type": "shell",
+            "command": "powershell.exe",
+            "args": [
+                "-NoProfile",
+                "-ExecutionPolicy",
+                "Bypass",
+                "-File",
+                "tools/windows/build-blender.ps1",
+                "-Preset",
+                "x64-release"
+            ],
+            "group": "build"
+        },
+        {
+            "label": "build glsl_preprocess (release)",
+            "type": "shell",
+            "command": "powershell.exe",
+            "args": [
+                "-NoProfile",
+                "-ExecutionPolicy",
+                "Bypass",
+                "-File",
+                "tools/windows/build-blender.ps1",
+                "-Preset",
+                "x64-release",
+                "-Build",
+                "-Target",
+                "glsl_preprocess",
+                "-Jobs",
+                "8"
+            ],
+            "group": "build"
+        },
+        {
+            "type": "cppbuild",
+            "label": "C/C++: cl.exe build active file",
+            "command": "cl.exe",
+            "args": [
+                "/Zi",
+                "/EHsc",
+                "/nologo",
+                "/Fe${fileDirname}\\${fileBasenameNoExtension}.exe",
+                "${file}"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$msCompile"
+            ],
+            "group": "build",
+            "detail": "Task generated by Debugger."
+        }
+    ]
+}

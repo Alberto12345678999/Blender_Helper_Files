@@ -1,0 +1,47 @@
+CompileFlags:
+  CompilationDatabase: out/build/x64-release-clangd
+
+---
+If:
+  PathMatch: '(^|.*[/\\])intern[/\\]cycles[/\\].*'
+CompileFlags:
+  Add: [-Wno-unused-function]
+
+---
+If:
+  PathMatch: '(^|.*[/\\])source[/\\]blender[/\\]makesrna[/\\]intern[/\\]rna_.*\.cc$'
+CompileFlags:
+  Add: [-DRNA_RUNTIME]
+
+---
+If:
+  PathMatch: '(^|.*[/\\])source[/\\]blender[/\\]gpu[/\\]shaders[/\\].*\.glsl$'
+CompileFlags:
+  CompilationDatabase: None
+  Add:
+    - -xc++
+    - -std=c++20
+    - -IC:/Users/apilo/Documents/blender_unify_cmp_shd_geo_nodes/blender/source/blender/gpu
+    - -IC:/Users/apilo/Documents/blender_unify_cmp_shd_geo_nodes/blender/source/blender/gpu/shaders
+    - -IC:/Users/apilo/Documents/blender_unify_cmp_shd_geo_nodes/blender/source/blender/gpu/shaders/common
+    - -IC:/Users/apilo/Documents/blender_unify_cmp_shd_geo_nodes/blender/source/blender/gpu/shaders/material
+    - -IC:/Users/apilo/Documents/blender_unify_cmp_shd_geo_nodes/blender/source/blender/gpu/shaders/infos
+    - -DGPU_SHADER
+    - -DGPU_SHADER_LIBRARY
+
+---
+If:
+  PathMatch: '(^|.*[/\\])source[/\\]blender[/\\]gpu[/\\]shaders[/\\].*\.hh$'
+CompileFlags:
+  CompilationDatabase: None
+  Add:
+    - -xc++
+    - -std=c++20
+    - -IC:/Users/apilo/Documents/blender_unify_cmp_shd_geo_nodes/blender/source/blender/gpu
+    - -IC:/Users/apilo/Documents/blender_unify_cmp_shd_geo_nodes/blender/source/blender/gpu/shaders
+    - -IC:/Users/apilo/Documents/blender_unify_cmp_shd_geo_nodes/blender/source/blender/gpu/shaders/common
+    - -IC:/Users/apilo/Documents/blender_unify_cmp_shd_geo_nodes/blender/source/blender/gpu/shaders/material
+    - -IC:/Users/apilo/Documents/blender_unify_cmp_shd_geo_nodes/blender/source/blender/gpu/shaders/infos
+    - -DGPU_SHADER
+    - -DGPU_SHADER_LIBRARY
+    - -Wno-unknown-pragmas
